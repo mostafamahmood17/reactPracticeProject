@@ -1,4 +1,12 @@
-// import React from 'react';
+ const cartstyle={
+//         position:"fixed",
+//         color:'white',
+//         backgroundColor:'grey',
+//         padding:'10px',
+//         border:"2px solid salmon",
+//         margin : "5px",
+//         borderRadius: "5px"
+//     }// import React from 'react';
 
 // const Cart = (props) => {
 //     const cart = props.cart;
@@ -13,15 +21,7 @@
 //     //     total = total + money.salary;
 //     // }
 
-//     const cartstyle={
-//         position:"fixed",
-//         color:'white',
-//         backgroundColor:'grey',
-//         padding:'10px',
-//         border:"2px solid salmon",
-//         margin : "5px",
-//         borderRadius: "5px"
-//     }
+//    
 //     return (
 //         <div style ={cartstyle}>
         

@@ -1,7 +1,7 @@
 import React, { useState} from 'react';
 import User from '../src/Components/User.js'
 import fake2 from '../src/fakeData/fake2.js'
-import Cart from '../src/Components/Cart.js'
+// import Cart from '../src/Components/Cart.js'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -9,13 +9,13 @@ function App() {
   const [user, setUser] = useState(fake2);
   const [cart , setCart] = useState([]);
   
-  
-  
-const handleSalary = (user, id) => {
+const handleSalary = (user) => {
   const totalUser =[...cart, user];
   setCart(totalUser)
   console.log('nabil', totalUser)}
-  
+
+  const totalSalary = cart.reduce( (total, anum) => total + anum.salary , 0 );
+  console.log("wow", cart)
   
   const cartStyle= {
     display:"flex",
@@ -30,12 +30,16 @@ const headStyle = {
   borderRadius:"5px",
   color:"white",
   wordWrap: 'break-word'
-}
-
-const hello = user.map(fakes => fakes.salary)
-console.log("wow",hello)
-
-   
+} 
+const cartstyle={
+          position:"fixed",
+          color:'white',
+          backgroundColor:'grey',
+          padding:'10px',
+          border:"2px solid salmon",
+          margin : "5px",
+          borderRadius: "5px"
+      }
   return (
     <div className="App">
       <header className="App-header" >
@@ -47,10 +51,11 @@ console.log("wow",hello)
        
       <div style={cartStyle}>
       
-      <div>
+      <div style={cartstyle}>
             <h1>Total Friends</h1>
             <h2>Total Person : {cart.length}</h2>
-            <h3>Total Salary : $ {hello.reduce( (total, cart) => total + cart.salary , 0 )}</h3>   
+            <h3>Total Salary : $ {totalSalary}</h3>  
+            {console.log(totalSalary)} 
 
         </div>
       </div>   

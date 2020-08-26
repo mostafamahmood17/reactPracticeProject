@@ -35,7 +35,7 @@ const User = (props) => {
         <h3>salary :$ {salary}</h3>
         <img style= {imageStyle} src={image} alt=""/>
         <br/>
-        <button className={buttonStyle} onClick ={()=>handleSalary(name, salary)}>add me</button>
+        <button className={buttonStyle} onClick ={()=>handleSalary(props.user)}>add me</button>
             
         </div>
     );

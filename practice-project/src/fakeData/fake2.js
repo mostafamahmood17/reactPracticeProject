@@ -23,7 +23,7 @@
                 "bs": "harness real-time e-markets"
             },
             "image": "https://randomuser.me/api/portraits/women/26.jpg",
-            "salary":2000
+            "salary": 2000
         },
         {
             "id": 2,
@@ -48,7 +48,7 @@
                 "bs": "synergize scalable supply-chains"
             },
             "image": "https://randomuser.me/api/portraits/women/77.jpg",
-            "salary":5000
+            "salary": 5000
         },
         {
             "id": 3,
@@ -73,7 +73,7 @@
                 "bs": "e-enable strategic applications"
             },
             "image": "https://randomuser.me/api/portraits/women/22.jpg",
-            "salary":4000
+            "salary": 4000
             
 
         },
@@ -100,7 +100,7 @@
                 "bs": "transition cutting-edge web services"
             },
             "image" : "https://randomuser.me/api/portraits/women/34.jpg",
-            "salary":6000
+            "salary": 6000
         },
         {
             "id": 5,
@@ -125,7 +125,7 @@
                 "bs": "revolutionize end-to-end systems"
             },
             "image":"https://randomuser.me/api/portraits/women/74.jpg",
-            "salary":3500
+            "salary": 3500
         },
         {
             "id": 6,
@@ -200,7 +200,7 @@
                 "bs": "e-enable extensible e-tailers"
             },
             "image":"https://randomuser.me/api/portraits/men/81.jpg",
-            "salary":7000
+            "salary": 7000
         },
         {
             "id": 9,
@@ -225,7 +225,7 @@
                 "bs": "aggregate real-time technologies"
             },
             "image":"https://randomuser.me/api/portraits/men/3.jpg",
-            "salary":5300
+            "salary": 5300
         },
         {
             "id": 10,
@@ -250,7 +250,7 @@
                 "bs": "target end-to-end models"
             },
             "image":"https://randomuser.me/api/portraits/men/14.jpg",
-            "salary":6600
+            "salary": 6600
         }
     ]
     export default fake2
