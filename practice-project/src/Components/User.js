@@ -8,7 +8,7 @@ const User = (props) => {
         margin:"5px",
         width:"50%",
         height:"450px",
-        float : "left",
+        
         borderRadius:"5px",
         color:"white",
         wordWrap: 'break-word'
@@ -23,19 +23,18 @@ const User = (props) => {
           border:'1px solid blue',
           borderRadius:"50px",
           cursor: 'pointer'
-        
-
+    
       }
       const handleSalary =props.handleSalary;
       const {name,email,image,salary} = props.user;
     return (
-        <div style={userStyle}>
+        <div style={userStyle} className='float-right'>
         <h1>{name}</h1>
         <h3>email: {email}</h3>
         <h3>salary :$ {salary}</h3>
         <img style= {imageStyle} src={image} alt=""/>
         <br/>
-        <button className={buttonStyle} onClick ={()=>handleSalary(props.user)}>add me</button>
+        <button className='btn btn-light' onClick ={()=>handleSalary(props.user)}>add me</button>
             
         </div>
     );

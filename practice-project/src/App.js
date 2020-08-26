@@ -32,33 +32,36 @@ const headStyle = {
   wordWrap: 'break-word'
 } 
 const cartstyle={
-          position:"fixed",
+          position:'fixed',
           color:'white',
           backgroundColor:'grey',
           padding:'10px',
           border:"2px solid salmon",
           margin : "5px",
           borderRadius: "5px"
+          
       }
   return (
     <div className="App">
       <header className="App-header" >
         <h1 style={headStyle}s>Friends Zone</h1>
     <div> 
+      <div className="d-flex justify-content">
       <div>
       {user.map(fake => <User  user={fake} handleSalary={handleSalary} key={fake.id}></User>)}
       </div> 
        
-      <div style={cartStyle}>
       
-      <div style={cartstyle}>
+      <div style={cartstyle} >
+      <div>
             <h1>Total Friends</h1>
             <h2>Total Person : {cart.length}</h2>
             <h3>Total Salary : $ {totalSalary}</h3>  
             {console.log(totalSalary)} 
-
-        </div>
-      </div>   
+      </div>
+      </div>
+      </div>
+      
     </div>    
   </header>
   </div>
